@@ -1,16 +1,9 @@
 
-:root {
-  font-size: calc(0.5vw + 1vh);
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
 .navbar{
-  box-shadow: 0px 6px 6px -4px rgba(0,0,0,.5);
-  background-color: #50505c;
+  box-shadow: 0px 6px 6px -4px rgba(83, 96, 133, 0.491);
+  background-color: rgba(82, 89, 103, 0.685);
   }
+  
 .navbar a {
   color: #fff;
   font-size: 16px;
@@ -34,7 +27,19 @@
 .navbar-collapse {
     justify-content: flex-end;
 }
-.todo{
+
+li{
+  list-style: none;
+  margin-top: .5em;
+  margin-bottom: .5em;
+}
+
+.card{
+  background-color: #130e0edc; 
   box-shadow: -6px 8px 8px -6px rgba(20, 20, 20, 0.5);
-  background-color: #302e2e;
+}
+
+.nav-item{
+  text-decoration: none;
+  padding:  15px;
 }
