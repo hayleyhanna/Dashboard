@@ -87,15 +87,12 @@ body {
   font-size: 17px;
   padding: 16px 24px;
   line-height: 50px;
+  text-decoration: none;
 }
 
 #sidebar .nav a:hover{
   background: none;
   color: #ECEFF1;
-}
-
-a {
-  text-decoration: none;
 }
 
 #sidebar .nav a i{
