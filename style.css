@@ -86,7 +86,7 @@ body {
   color: #CFD8DC;
   font-size: 18px;
   padding: 16px 24px;
-  text-decoration: none;
+  text-decoration: underline;
   line-height: 50px;
 }
 
