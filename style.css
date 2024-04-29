@@ -87,6 +87,7 @@ body {
   font-size: 18px;
   padding: 16px 24px;
   text-decoration: none;
+  line-height: 50px;
 }
 
 #sidebar .nav a:hover{
