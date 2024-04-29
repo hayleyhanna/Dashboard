@@ -93,6 +93,9 @@ body {
   background: none;
   color: #ECEFF1;
 }
+a {
+  text-decoration: none;
+}
 
 #sidebar .nav a i{
   margin-right: 16px;
