@@ -1,45 +1,80 @@
 
-.navbar{
-  box-shadow: 0px 6px 6px -4px rgba(83, 96, 133, 0.491);
-  background-color: rgba(82, 89, 103, 0.685);
-  }
-  
-.navbar a {
-  color: #fff;
+body {
+  overflow-x: hidden;
   font-size: 16px;
+}
+
+/* Toggle Styles */
+
+#viewport {
+  padding-left: 250px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+#sidebar {
+  z-index: 1000;
+  position: fixed;
+  left: 150x;
+  width: 175px;
+  height: 100%;
+  margin-left: -250px;
+  overflow-y: auto;
+  background: #262727;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+#sidebar header {
+  background-color: #1b1b1b81;
+  font-size: 20px;
+  line-height: 65px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
   text-decoration: none;
-  margin-left: 15px;
-  transition: 0.3s;
-}
-.navbar a:hover {
-  color: rgb(3, 3, 3);
 }
 
-.nav-link,
-.navbar-brand {
-    letter-spacing: 4px;
-    cursor: pointer;   
-}
-.nav-link {
-    margin-right: 1.5em;
+#sidebar header a:hover {
+  color: #fff;
 }
 
-.navbar-collapse {
-    justify-content: flex-end;
-}
-
-li{
-  list-style: none;
-  margin-top: .5em;
-  margin-bottom: .5em;
-}
-
-.card{
-  background-color: #130e0edc; 
-  box-shadow: -6px 8px 8px -6px rgba(20, 20, 20, 0.5);
-}
-
-.nav-item{
+#sidebar .nav a{
+  background: none;
+  color: #CFD8DC;
+  font-size: 18px;
+  padding: 16px 24px;
   text-decoration: none;
-  padding:  15px;
+}
+
+#sidebar .nav a:hover{
+  background: none;
+  color: #ECEFF1;
+}
+
+#sidebar .nav a i{
+  margin-right: 16px;
+}
+
+.todo{
+  margin-left: 3em;
+}
+
+form{
+ margin-left: 10em;
 }
