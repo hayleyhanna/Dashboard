@@ -69,6 +69,8 @@ body {
   font-size: 20px;
   line-height: 65px;
   text-align: center;
+  border-style: solid;
+  border-color: #49474d;
 }
 
 #sidebar header a {
