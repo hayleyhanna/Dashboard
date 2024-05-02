@@ -47,6 +47,10 @@ body {
   margin-right: 0;
 }
 
+div#content{
+  margin-left: 78%;
+}
+
 /* Sidebar Styles */
 
 #sidebar {
