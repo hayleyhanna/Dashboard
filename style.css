@@ -24,89 +24,44 @@ img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
 }
+
 body {
-  line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* Toggle Styles */
-
-#viewport {
-  padding-left: 250px;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+.navbar{
+  padding:15px;
 }
 
-#content {
-  width: 100%;
-  position: relative;
-  margin-right: 0;
+.nav-link,
+.navbar-brand {
+ letter-spacing: 3px;
+ cursor: pointer;   
+}
+.nav-link {
+ margin-right: 1em;
 }
 
-div#content{
-  margin-left: 81%;
+.navbar-collapse {
+ justify-content: flex-end;
 }
 
-/* Sidebar Styles */
-
-#sidebar {
-  z-index: 1000;
-  position: fixed;
-  left: 150x;
-  width: 175px;
-  height: 100%;
-  margin-left: -250px;
-  overflow-y: auto;
-  background: #282827;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-}
-
-#sidebar header {
-  background-color: #1b1b1b81;
-  font-size: 20px;
-  line-height: 65px;
-  text-align: center;
-  border-bottom-style: solid;
-  border-color: #49474d;
-}
-
-#sidebar header a {
-  color: #fff;
-  display: block;
-  text-decoration: none;
-}
-
-#sidebar header a:hover {
-  color: #fff;
-}
-
-#sidebar .nav a{
-  background: none;
-  color: #CFD8DC;
+.navbar a {
+  color: #c5c5c5;
+  text-decoration:underline;
   font-size: 17px;
-  padding: 16px 24px;
-  line-height: 60px;
-  text-decoration: none;
+  
 }
 
-#sidebar .nav a:hover{
-  background: none;
-  color: #ECEFF1;
-}
-
-#sidebar .nav a i{
-  margin-right: 16px;
+.navbar a:hover {
+  color:#606063;
 }
 
 .todo{
-    margin-left: 3em;
     padding: .3em;
     background-color: #49474d;
 }
