@@ -51,19 +51,20 @@ body {
 }
 
 .navbar a {
-  color: #c5c5c5;
+  color: #d5d5d5;
   text-decoration:underline;
   font-size: 17px;
-  
+  text-decoration-color: 1a1a1a;
+  text-decoration-thickness: 2px;
 }
 
 .navbar a:hover {
-  color:#606063;
+  color:#1a1a1a;
 }
 
 .todo{
     padding: .3em;
-    background-color: #49474d;
+    background-color: #4c5463;
 }
 
 form{
