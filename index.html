@@ -1,78 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dashboard</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css">
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <header>
-    <nav class="navbar navbar-expand-lg sticky-top shadow pb-3" id="mainNav" style= "background-color: #4c5463">
-      <div class="container-fluid">
-       <iframe src="https://free.timeanddate.com/clock/i9cua9p3/n77/fn3/fs20/fcd5d5d5/tc4c5463/pct/tt0/tw1/tm1/ts1" frameborder="0" width="334" height="25" allowtransparency="true"></iframe>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarResponsive"
-          aria-controls="navbarResponsive"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href= "https://www.systemmonitor.us/dashboard/" target="_blank">RMM</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://na.myconnectwise.net/v2024_1//ConnectWise.aspx?locale=en_US&routeTo=ServiceFV&srRecID=7101&fullscreen=false&chat=false#XQAACACiAQAAAAAAAAA9iIoG07$U9W$R9MjqxX3hw2Vs$bB0pE7lkFfOLeis8TlS8eBHvdOs0e57TGTUv$dw6SkrUagX785q6nkr6JGNc2m2xOYCarsqhrEMsw2isNDP6JmPqVOgbHQr4MDpowazEQmJ4OmPePSxhxONfDYCa0v5RVlLNb6r_9a8ALmYqqU2uzDcV$bOSgDkY5TgNvlSypb4gwU4Fn_soDWHmZvbXK2GAvEFZpvdwt7qOXF5q1EARKfQx4JP_6PTcwA=??ServiceBoard" target="_blank">ConnectWise</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://docs.ctlogic.net/" target="_blank">Hudu</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://cipp.ctlogic.net/home?customerId=a9af4cb4-962f-4d7b-b387-4da0121eb555" target="_blank">CIPP</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://office.com/" target="_blank">MS365</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="https://ctlogic.screenconnect.com/" target="_blank">
-                ScreenConnect
-              </a>
-            </li>
-          </ul>
+    <style>
+        body {
+            background-color: #1a1a1a; /* Changed background color to #1a1a1a */
+            color: #e0e0e0;
+            font-size: 16px;
+        }
+
+        .navbar{
+           padding:14.5px;
+        }
+
+        .nav-link,
+        .navbar-brand {
+            letter-spacing: 3px;
+            cursor: pointer;   
+        }
+        .nav-link {
+            margin-right: 1em;
+        }
+
+        .navbar-collapse {
+            justify-content: flex-end;
+        }
+
+        .navbar a {
+             color: #d5d5d5;
+             text-decoration:underline;
+             font-size: 17px;
+             text-decoration-color: 1a1a1a;
+             text-decoration-thickness: 2px;
+            }
+
+            .navbar a:hover {
+                  color:#1a1a1a;
+                }
+
+ .embed-responsive {
+            background-color: #4d4d4d;
+            height: 600px; /* Set a fixed height for the iframe container */
+            margin-top: 11%;
+        }
+        .embed-responsive iframe {
+            height: 100%; /* Ensure iframe fills the container */
+        }
+        .list-group{
+            margin-top: 11%;
+        }
+
+        .list-group-item {
+            background-color: #282827;
+            color: #e0e0e0;
+            line-height:7em; /* Increased line height for better readability */
+            border-color: #171718e0;
+        }
+        .list-group-title{
+            list-style: none;
+            background-color: #1d1e1f;
+        }
+
+        .column-padding {
+            padding: 0 5%; /* Added padding around the columns */
+        }
+        .note-area {
+            padding: 1rem;
+            margin-top: 3rem;
+            margin-left: 11%;
+           
+        }
+        footer {
+            padding: 1rem;
+            text-align: center;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg sticky-top shadow pb-3" id="mainNav" style="background-color: #4c5463;">
+          <div class="container-fluid">
+           <iframe src="https://free.timeanddate.com/clock/i9cua9p3/n77/fn3/fs20/fcd5d5d5/tc4c5463/pct/tt0/tw1/tm1/ts1" frameborder="0" width="334" height="25" allowtransparency="true"></iframe>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.systemmonitor.us/dashboard/" target="_blank">RMM</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://na.myconnectwise.net/v2024_1//ConnectWise.aspx?locale=en_US&amp;routeTo=ServiceFV&amp;srRecID=7101&amp;fullscreen=false&amp;chat=false#XQAACACiAQAAAAAAAAA9iIoG07$U9W$R9MjqxX3hw2Vs$bB0pE7lkFfOLeis8TlS8eBHvdOs0e57TGTUv$dw6SkrUagX785q6nkr6JGNc2m2xOYCarsqhrEMsw2isNDP6JmPqVOgbHQr4MDpowazEQmJ4OmPePSxhxONfDYCa0v5RVlLNb6r_9a8ALmYqqU2uzDcV$bOSgDkY5TgNvlSypb4gwU4Fn_soDWHmZvbXK2GAvEFZpvdwt7qOXF5q1EARKfQx4JP_6PTcwA=??ServiceBoard" target="_blank">ConnectWise</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://docs.ctlogic.net/" target="_blank">Hudu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://cipp.ctlogic.net/home?customerId=a9af4cb4-962f-4d7b-b387-4da0121eb555" target="_blank">CIPP</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://office.com/" target="_blank">MS365</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://ctlogic.screenconnect.com/" target="_blank">
+                    ScreenConnect
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </header>
+    <div class="container my-5">
+        <div class="row mb-4">
+            <div class="col-lg-6 col-md-12 mb-4 column-padding">
+                <div class="embed-responsive rounded">
+                    <iframe class="embed-responsive-item border border-4 shadow" style="--bs-border-color: #4c5463;" src="https://app.todoist.com/app/project/2331955958" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mb-4 column-padding">
+                <ul class="list-group border border-4 shadow rounded" style="--bs-border-color: #4c5463;">
+                    <li class="list-group-title border-bottom border-3 pt-3 pb-3 pl-2" style="--bs-border-color: #4c5463;"><h3 class="fw-light fs-4">Commands</h3></li>
+                    <li class="list-group-item">Username: .\tempadmin</li>
+                    <li class="list-group-item">net user /add tempadmin</li>
+                    <li class="list-group-item">net localgroup administrators tempadmin /add</li>
+                    <li class="list-group-item">net localgroup administrators tempadmin /delete</li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </nav>
-</header>
-    <body style= "background-color: #1a1a1a;">
-      <div class="container">
-        <div class="row mt-5">
-          <div class="col-sm-5 col-md-5 col-lg-6 me-5 p-3 mt-5">
-            <iframe class="todo shadow rounded" src="https://app.todoist.com/app/project/calendar-2331955958" height="550" width="550"></iframe>
-</div>
-<div class="col-sm-5 col-md-5 col-lg-5 p-3 mt-5">
-<iframe class="todo shadow rounded" src="https://app.todoist.com/app/project/tickets-2332010892" height="550" width="100%"></iframe>
-</div>
-</div>
-<div class="row">
-<form>
-  <div class="form-group">
-    <label class="notes fs-4 ms-3 pt-5 fw-light text-light" for="exampleFormControlTextarea1">notes</label>
-    <textarea class="form-control form-control-sm text-light border border-4 rounded shadow" id="exampleFormControlTextarea1" rows="3" style="width: 75%; height: 20rem; background-color: #282827; --bs-border-color: #49474d;"></textarea>
-  </div>
-  </form>
-</div>
-        <footer class="py-3 my-4">
-  <ul class="nav justify-content-center">
-  </ul>
-  <p class="text-center text-body-secondary"></p>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    </body>
-  </html>
+        <div class="row">
+            <div>
+                <div class="note-area">
+                    <h5 class="fs-4 fw-light ms-3">Notes</h5>
+                    <textarea class="form-control form-control-lg border border-4 shadow ms-3 text-light fw-light fs-5" style= "width: 95%; height: 20rem; background-color: #282827; --bs-border-color: #4c5463;" placeholder="Enter your notes here..."></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
