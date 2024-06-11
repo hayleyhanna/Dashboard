@@ -69,12 +69,13 @@
         .column-padding {
             padding: 0 5%; /* Added padding around the columns */
         }
-        .note-area {
-            padding: 1rem;
-            margin-top: 3rem;
-            margin-left: 11%;
-           
-        }
+            .form-control::placeholder {
+  color: rgb(194, 194, 194);
+}
+
+.form-control{
+background-color: #282827;
+}
         footer {
             padding: 1rem;
             text-align: center;
@@ -126,7 +127,6 @@
             </div>
             <div class="col-lg-6 col-md-12 mb-4 column-padding">
                 <ul class="list-group border border-4 shadow rounded" style="--bs-border-color: #4c5463;">
-                    <li class="list-group-title border-bottom border-3 pt-3 pb-3 pl-2" style="--bs-border-color: #4c5463;"><h3 class="fw-light fs-4">Commands</h3></li>
                     <li class="list-group-item">Username: .\tempadmin</li>
                     <li class="list-group-item">net user /add tempadmin</li>
                     <li class="list-group-item">net localgroup administrators tempadmin /add</li>
@@ -134,7 +134,7 @@
                 </ul>
             </div>
         </div>
-        <div class="container">
+           <div class="container">
 
             <form class="well form-horizontal" action=" " method="post"  id="contact_form">
         <fieldset>
@@ -147,7 +147,7 @@
         <div class="form-group"><center>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
-          <input  name="first_name" placeholder="First Name" class="form-control"  type="text">
+          <input  name="first_name" placeholder="First Name" class="form-control border border-3" style="--bs-border-color: #4c5463;" type="text">
             </div>
           </div>
         </div></center>
@@ -157,7 +157,7 @@
         <div class="form-group"><center>
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
-          <input name="last_name" placeholder="Last Name" class="form-control"  type="text">
+          <input name="last_name" placeholder="Last Name" class="form-control border border-3" style="--bs-border-color: #4c5463;" type="text">
             </div>
           </div>
         </div></center>
@@ -167,34 +167,26 @@
         <div class="form-group"><center>
           <div class="col-md-4 inputGroupContainer">
           <div class="input-group">
-          <input  name="user_name" placeholder="Phone Number" class="form-control"  type="text">
+          <input  name="user_name" placeholder="Phone Number" class="form-control border border-3" style="--bs-border-color: #4c5463;"  type="text">
             </div>
           </div>
         </div></center>
+        
+        <!-- Text input-->
         
         <!-- Text input-->
         
         <div class="form-group"><center>
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
-          <input name="user_password" placeholder="Email" class="form-control"  type="password">
+          <input name="confirm_password" placeholder="Issue" class="form-control border border-3" style="--bs-border-color: #4c5463;"  type="text">
             </div>
           </div>
         </div></center>
         
         <!-- Text input-->
-        
-        <div class="form-group"><center>
-            <div class="col-md-4 inputGroupContainer">
-            <div class="input-group">
-          <input name="confirm_password" placeholder="Issue" class="form-control"  type="text">
-            </div>
-          </div>
-        </div></center>
-        
-        <!-- Text input-->
-        <textarea class="form-control form-control-lg mb-4" placeholder="Notes" style= "height: 17em; width:24em; margin: 0 auto;
-    float: none;"></textarea>
+        <textarea class="form-control form-control-lg mb-4 border border-3" placeholder="Notes" style= "height: 17em; width:24em; margin: 0 auto;
+    float: none; --bs-border-color: #4c5463;"></textarea>
         
         
         <!-- Text input-->
@@ -202,8 +194,7 @@
         <div class="form-group mt-4"><center>
             <div class="col-md-4 inputGroupContainer">
             <div class="input-group">
-                <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
-          <input name="contact_no" placeholder="Resolution" class="form-control" type="text">
+          <input name="contact_no" placeholder="Resolution" class="form-control border border-3" style="--bs-border-color: #4c5463;" type="text">
             </div>
           </div>
         </div></center>
