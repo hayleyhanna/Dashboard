@@ -73,6 +73,10 @@ body {
 color: white;
 }
 
+a.link {
+    color: white;
+}
+
 .form-control{
 background-color: #282827;
 color:white;
