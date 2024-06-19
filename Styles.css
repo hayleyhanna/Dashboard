@@ -1,0 +1,89 @@
+body {
+   /* Changed background color to #1a1a1a */
+    color: #f3f3f3;
+    font-size: 16px;
+    background-color: #1e2125;
+}
+
+.navbar{
+   padding:14.5px;
+   background-color: #4c5463;
+}
+
+.nav-link,
+.navbar-brand {
+    letter-spacing: 3px;
+    cursor: pointer;   
+}
+.nav-link {
+    margin-right: 1em;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar a {
+     text-decoration:underline;
+     font-size: 17px;
+     font-weight: 475;
+     text-decoration-color: #212631;
+     text-decoration-thickness: 2px;
+     color: rgb(196, 193, 193);
+    }
+    
+    .navbar a:hover {
+          color:#2d2c3a;
+        }
+        
+        .navbar a:active, .navbar a:focus {
+            color: none;
+            text-decoration: underline;
+            text-decoration-color: #212631;
+          }
+          
+
+.embed-responsive {
+    background-color: #4d4d4d;
+    height: 90%; /* Set a fixed height for the iframe container */
+    margin-top: 11%;
+}
+.embed-responsive iframe {
+    height: 100%; /* Ensure iframe fills the container */
+}
+.list-group{
+    margin-top: 11%;
+}
+
+.list-group-item {
+    background-color: #282827;
+    color: #e0e0e0;
+    line-height:7em; /* Increased line height for better readability */
+    border-color: #171718e0;
+}
+.list-group-title{
+    list-style: none;
+    background-color: #1d1e1f;
+}
+
+.column-padding {
+    padding: 0 5%; /* Added padding around the columns */
+}
+           .form-control::placeholder {
+color: white;
+}
+
+.form-control{
+background-color: #282827;
+color:white;
+font-weight: 350;
+}
+.form-control:focus{
+background-color: #282827;
+color: white;
+}
+footer {
+    padding: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+}
