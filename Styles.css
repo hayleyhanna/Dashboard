@@ -57,7 +57,7 @@ body {
 }
 
 .list-group-item {
-    background-color: #282827;
+    background-color: #1c1c1c;
     color: #e0e0e0;
     line-height:7em; /* Increased line height for better readability */
     border-color: #171718e0;
