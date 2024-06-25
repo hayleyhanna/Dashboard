@@ -70,11 +70,12 @@ body {
 .column-padding {
     padding: 0 5%; /* Added padding around the columns */
 }
-           .form-control::placeholder {
+
+.form-control::placeholder {
 color: white;
 }
 
-a.link {
+a.mfa {
     color: white;
 }
 
